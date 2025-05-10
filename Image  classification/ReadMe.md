@@ -13,7 +13,7 @@ The setup includes an AWS Lambda function named `imageClassifier`, which uses a 
 An S3 event notification is configured to invoke the Lambda function automatically whenever a new object is created in the source bucket. The configuration ensures proper IAM permissions for the Lambda to be triggered by S3 and access the required AWS services. This infrastructure is designed to be modular, scalable, and applicable in scenarios like medical image triaging, research, or automated sorting of clinical data.
 
 
-## INput
+## Input
  
 
 | Name                     | Description                                             | Type   | Default | Required |
@@ -25,4 +25,4 @@ An S3 event notification is configured to invoke the Lambda function automatical
 | `source_bucket`          | The S3 source bucket                                    | string | n/a     | ✅        |
 | `lambda_code_s3_bucket`  | The S3 bucket where the zipped Lambda code is stored    | string | n/a     | ✅        |
 | `lambda_code_s3_key`     | The S3 key (path) to the zipped Lambda code file        | string | n/a     | ✅        |
-| `confidence_level`       | Confidence level for Rekognition detection              | number | `80`    | ✅          |
+| `confidence_level`       | Confidence level for Rekognition detection              | number | `80`    | ✅        |
