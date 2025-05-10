@@ -42,5 +42,5 @@ variable "source_bucket" {
 variable "confidence_level" {
   description = "Confidence level for Rekognition detection"
   type        = number
-  default     = 80
+  default     = 90
 }
