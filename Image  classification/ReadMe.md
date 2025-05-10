@@ -5,8 +5,9 @@
 This Terraform configuration sets up an AWS-based serverless pipeline for classifying medical images using Amazon Rekognition. It provisions four S3 buckets dedicated to storing different types of medical images—X-ray, CT scan, general use—and a source bucket that triggers image classification. When new images are uploaded to the source bucket, a Lambda function is invoked to analyze them. The results can be used for routing images to specific destination buckets based on content type or classification confidence.
 
 
+<img src="ct.png" alt="Alt text" style="width:50%;">
 
-![Alt text](it.png)
+![Alt text](ct.png)
 
 
 ![Alt text](xray.png)
