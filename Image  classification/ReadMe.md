@@ -7,10 +7,9 @@ This Terraform configuration sets up an AWS-based serverless pipeline for classi
 
 <img src="ctscan.png" alt="Alt text" style="width:50%;">
 
-![Alt text](ct.png)
+<img src="xray.png" alt="Alt text" style="width:50%;">
 
-
-![Alt text](xray.png)
+ 
 ## Infrastructure Components
 
 The setup includes an AWS Lambda function named `imageClassifier`, which uses a Python 3.9 runtime and is deployed using source code stored in an S3 bucket (provided via variables). The Lambda function is granted necessary permissions through IAM roles and policy attachments, enabling it to access Amazon Rekognition and Amazon S3. The function environment is configured with target bucket names and a confidence level threshold, allowing dynamic behavior based on image analysis results.
