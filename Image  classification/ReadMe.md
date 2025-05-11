@@ -15,6 +15,7 @@ This Terraform configuration sets up an AWS-based serverless pipeline for classi
 The setup includes an AWS Lambda function  which uses a Python 3.9 runtime and is deployed using source code stored in an S3 bucket (provided via variables). The Lambda function is granted necessary permissions through IAM roles and policy attachments, enabling it to access Amazon Rekognition and Amazon S3. The function environment is configured with target bucket names and a confidence level threshold, allowing dynamic behavior based on image analysis results.
 
 <img src="design.png" alt="Alt text" style="width:75%;">
+
 ## Trigger and Permissions
 
 An S3 event notification is configured to invoke the Lambda function automatically whenever a new object is created in the source bucket. The configuration ensures proper IAM permissions for the Lambda to be triggered by S3 and access the required AWS services. This infrastructure is designed to be modular, scalable, and applicable in scenarios like medical image triaging, research, or automated sorting of clinical data.
